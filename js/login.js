@@ -31,7 +31,8 @@ function login(emailInput, passwordInput) {
 
         for (const userId in usersData) {
           const user = usersData[userId];
-          if (user.email === emailInput && user.password === passwordInput) {
+          if (user.username === emailInput && user.password === passwordInput) {
+             localStorage.setItem('loggedInUsername', user.username);
             found = true;
             break;
           }
@@ -57,9 +58,9 @@ const form = document.getElementById("loginForm");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  const emailValue = document.getElementById("email").value;
+  const nameValue = document.getElementById("email").value;
   const passwordValue = document.getElementById("password").value;
-login(emailValue, passwordValue);
+login(nameValue, passwordValue);
 
 })
   

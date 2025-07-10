@@ -31,6 +31,7 @@
               console.log("User already exists.");
             } else {
               set(userRef, {
+                username:userName,
                 email:email1,
                 password:password1,
               })
