@@ -70,8 +70,8 @@
 </div>
 
 <div class="product">
-    <label for="salary">Discretionary</label>
-<input type="number" id="Discretionary" min="0" required>
+    <label for="salary">Luxuries</label>
+<input type="number" id="Luxuries" min="0" required>
 </div>
 
 <div class="product">
@@ -82,12 +82,19 @@
 <div class="product">
     <label for="salary">Savings</label>
 <input type="number" id="Savings" min="0" required>
-<button style="color: black; background-color: white; border: black solid 2px;" onclick="calculate()">Calculate</button>
+
 </div>
       </div>
-      <div class="result">
-
+      <div class="button"  id="button" ><button onclick="calculate()">Calculate</button></div>
+       
+      <div class="result" id="result">
+        <h5 id="final" style="margin: 10px; font-size: 40px;"></h5>
+<p id="result1">You are on the right track managing your money wisely, as having a surplus after covering all expenses is a very positive sign. Use this surplus as an opportunity to build real financial security instead of spending it immediately. It is important to allocate part of this money to an emergency savings fund, which helps you face unexpected situations like illness or car repairs. Additionally, consider investing part of the surplus in diverse financial instruments such as stocks, investment funds, or even small businesses that may generate additional income over time. Don’t forget to develop your skills or pursue continuous learning, as investing in yourself can improve your income in the future. It is also recommended to regularly review your budget to optimize resource allocation and reduce unnecessary expenses, so that the surplus increases over time and brings you closer to achieving your major financial goals, such as buying a house or starting your own business.</p>
+<p id="result2">You are in a stable position, but you still lack enough financial room for saving or investing, which may limit your chances of improving your financial situation in the future. Therefore, it is important to start monitoring your expenses carefully and focus on reducing discretionary spending, especially luxuries like entertainment and subscriptions that can be eliminated or minimized. Try renegotiating fixed bills such as internet or electricity to get lower rates. Even saving a small amount monthly is a good start to building an emergency fund or investing over time. Consider increasing your income by learning new skills or working on a small side project, as higher income gives you greater flexibility. It is also advisable to create a simple financial plan that clearly sets your saving and investing goals, and gradually commit to it to improve your financial quality of life and avoid unwanted financial surprises.</p>
+<p id="result3">Your current situation signals financial danger if it continues, because a deficit means your expenses exceed your income, which may lead to accumulating debts or serious financial problems. The first step you should take is to carefully review each item of your expenses. Focus on significantly reducing discretionary spending and luxuries, and cut down on unnecessary expenditures. Also, look for ways to reduce essential expenses, such as moving to cheaper housing or using more affordable transportation. At the same time, try to find an additional source of income, whether through freelance work, side skills, or even small online projects. Don’t hesitate to seek advice from a financial specialist if possible. Most importantly, start setting a strict financial plan and monitor your budget daily so you can control your financial situation, turn the deficit into balance, and gradually move toward a surplus over time.</p>
+<p id="result4">You are in an excellent financial position, with your income being high compared to your expenses, which gives you a real opportunity to build wealth and achieve future financial independence. Invest a significant portion of your surplus in diverse financial instruments that help grow your capital, such as investment funds, stocks, or even real estate if possible. Don’t put all your money in one place; diversifying your investments reduces risks. Additionally, consider improving your skills and increasing your financial knowledge so you can make better and safer investment decisions. Allocate part of your surplus to long-term savings, such as retirement funds or purchasing fixed assets that increase your passive income over time. Also, don’t neglect entertainment and living wisely to enjoy your life, but without extravagance. Building a comprehensive financial plan that includes short- and long-term goals with periodic reviews ensures you continue improving your financial situation and increases your ability to achieve your financial dreams.</p>
       </div>
+     <h2 id="thankyou" style="text-align: center; transform: translateY(-20px); color: darkblue; display: none;">Thank you for your experience</h2>
       <script src="js/SmartSalaryPlanner.js"></script>
 </body>
 </html>
