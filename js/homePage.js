@@ -44,41 +44,6 @@ if (username) {
 } else {
   console.error("User ID not found in localStorage");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 window.addEventListener('DOMContentLoaded', () => {
   const username = localStorage.getItem('loggedInUsername');
   if (username) {

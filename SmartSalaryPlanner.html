@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="author" content="Hashem,Karam" />
+    <meta
+      name="discription"
+      content="for fintech rally education university 2025"
+    />
+    <meta name="keywords" content="open source, fintech, education" />
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/homePage.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/SmartSalaryPlanner.css">
+    <title>Smart Salary Planner</title>
+</head>
+<body>
+    <button onclick="goToPage()">Go Back</button>
+    <div class="title">
+        <h1>Smart Salary Planner</h1>
+        <p> a professional tool designed to help individuals effectively manage their monthly income by allocating 
+            it across key financial categories. Users can input their salary and distribute it among essential
+             expenses such as housing, food, and transportation, as well as monthly bills, personal needs, 
+             discretionary spending, and investment or savings goals. The tool provides a clear and organized 
+             overview of how income is being utilized, enabling users to make informed financial decisions. Whether the 
+             objective is to save more, reduce unnecessary spending, or gain a better understanding of personal 
+             finances, Smart Salary Planner offers a practical and straightforward solution for achieving financial balance.
+</p>
+<div class="salary" id="hide">
+   
+     <label for="salary">Enter your salary</label>
+    <input type="number" id="salary" min="0" required>
+    <button onclick="start()">Start</button>
+    <p style="color: red; display: none; margin: 0;" id="error">please enter a valid salary(is more than 0)</p>
+   
+</div>
+    </div>
+
+      <div class="calclulation" id="calc">
+
+    <div class="product">
+    <label for="salary">Salary</label>
+<input type="number" id="salary1" disabled>
+</div>
+
+<div class="product">
+    <label for="salary">Housing</label>
+<input type="number" id="Housing" min="0" required>
+</div>
+
+<div class="product">
+    <label for="salary">Food</label>
+<input type="number" id="Food" min="0" required>
+</div>
+
+<div class="product">
+    <label for="salary">Transportation</label>
+<input type="number" id="Transportation" min="0" required>
+</div>
+
+<div class="product">
+    <label for="salary">Bills</label>
+<input type="number" id="Bills" min="0" required
+>
+</div>
+
+<div class="product">
+    <label for="salary">Personal Needs</label>
+<input type="number" id="PersonalNeeds" min="0" required>
+</div>
+
+<div class="product">
+    <label for="salary">Discretionary</label>
+<input type="number" id="Discretionary" min="0" required>
+</div>
+
+<div class="product">
+    <label for="salary">Investment</label>
+<input type="number" id="Investment" min="0" required>
+</div>
+
+<div class="product">
+    <label for="salary">Savings</label>
+<input type="number" id="Savings" min="0" required>
+<button style="color: black; background-color: white; border: black solid 2px;" onclick="calculate()">Calculate</button>
+</div>
+      </div>
+      <div class="result">
+
+      </div>
+      <script src="js/SmartSalaryPlanner.js"></script>
+</body>
+</html>
