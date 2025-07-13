@@ -1,7 +1,7 @@
 const sideMenu = document.querySelector('.side-menu');
 const menuBtn = document.querySelector('#menu-bar');
 const closeBtn = document.querySelector('#close-btn');
-
+const username = localStorage.getItem("loggedInUsername");
 
 const themeToggler = document.querySelector('.theme-toggler');
 
@@ -26,4 +26,13 @@ window.addEventListener('click', (event) => {
     if (!sideMenu.contains(event.target) && !menuBtn.contains(event.target)) {
         sideMenu.style.display = "none";
     }
+});
+window.addEventListener('DOMContentLoaded', () => {
+  const username = localStorage.getItem('loggedInUsername');
+  if (username) {
+    document.getElementById('username').textContent = username;
+  } else {
+   
+    window.location.href = 'login.html';
+  }
 });

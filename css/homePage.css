@@ -22,6 +22,7 @@ body {
     flex-wrap: wrap;
     gap: 40px;
     position: relative;
+    
 }
 
 .left {
@@ -189,7 +190,11 @@ body {
     padding: 20px 100px;
    background-image: linear-gradient( skyblue,beige);
    position: relative;
+   margin-top: 1px;
+   box-shadow: -1px -1px 0px skyblue;
+
 }
+
 .p{
     font-size: 1.2rem;
     font-weight: 400;
@@ -334,11 +339,13 @@ margin-top: 25px;
 }
 .container2 .right2{
     width: 40%;
+
     padding: 100px;
 }
 
 .right2 img{
     width: 100%;
+
 }
 .custom-shape-divider-bottom-1752070487 {
     position: absolute;

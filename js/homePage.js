@@ -27,8 +27,8 @@ if (username) {
     // إذا البيانات مش موجودة أو ما فيها age أو address أو isActive
     if (!data?.age && !data?.address && !data?.isActive) {
       update(userRef, {
-        age: 20,
-        address: "Amman",
+        salary:0,
+        address: "Jordan",
         isActive: true
       }).then(() => {
         console.log("User data updated for first time");
