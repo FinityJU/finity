@@ -21,6 +21,7 @@ body {
     background-image: linear-gradient(skyblue, darkblue);
     flex-wrap: wrap;
     gap: 40px;
+    position: relative;
 }
 
 .left {
