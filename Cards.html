@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="Hashem,Karam" />
+    <meta
+      name="discription"
+      content="for fintech rally education university 2025"
+    />
+    <meta name="keywords" content="open source, fintech, education" />
+    <link rel="icon" href="images/icon.png" />
+    <link rel="stylesheet" href="css/Cards.css" />
+    <title>Cards</title>
+</head>
+<body>
+   <div>
+      <button onclick="goToPage()">Go Back</button>
+      <span id="username"></span>
+   </div>
+     <div class="intro">
+        <h1>Cards</h1>
+        <p>This platform allows users to securely connect their bank cards from supported banks. Once linked, users gain access to a centralized dashboard where they can view and manage all their active subscriptions, track spending, and monitor key financial insights — all in one place.</p>
+     </div>
+    <div align="center"> <button  onclick="addCard()">Add card</button></div>
+     <div class="container">
+      <div class="card">
+        <div class="image"><img src="images/card.jpg" alt="" loading="lazy"></div>
+        <h2 id="title">hashem shatat</h2>
+<ul>
+  <li><a href="#">subscriptions</a></li>
+  <li><a href="#">dashboard</a></li>
+  <li><a href="#">details</a></li>
+</ul>
+      </div>
+     </div>
+     <div class="addcard hidden" id="addcard">
+    <div class="card1">
+  <select name="bank" id="selectBank">
+        <option value="test">choose bank</option>
+        <option value="jordan Kuwait">Jordan Kuwait</option>
+        <option value="Housing Bank">Housing Bank</option>
+        <option value="Jordan Islamic">Jordan Islamic</option>
+        <option value="Cairo Amman">Cairo Amman</option>
+        <option value="Arab Bank">Arab Bank</option>
+      </select>
+    </div>
+     <div class="card1">
+       <label for="cardNumber">cardNumber</label>
+      <input type="number" name="cardNumber" id="cardNumber" minlength="16" maxlength="16" min="0" max="16">
+     </div>
+     <div class="card1">
+       <label for="cardHolder">cardHolder</label>
+      <input type="text" name="cardHolder" id="cardHolder">
+     </div>
+     <div class="card1">
+       <label for="ExpiryDate">Expiry Date</label>
+      <input type="month" name="ExpiryDate" id="ExpiryDate">
+     </div>
+<div class="card1">
+       <select name="type" id="selectType">
+      <option value="test">selectType</option>
+      <option value="Debit">Debit</option>
+      <option value="Credit">Credit</option>
+     </select>
+</div>
+     <div class="card1">
+       <label for="CVVCVC">CVV/CVC</label>
+      <input type="number" name="CVVCVC" id="CVVCVC" minlength="3" maxlength="3">
+     </div>
+   <div class="card1">
+       <label for="Availablebalance">Available balance</label>
+      <input type="number" name="Availablebalance" id="Availablebalance">
+   </div>
+    <div class="card1">  <select name="CardStatus" id="CardStatus">
+        <option value="test">choose status</option>
+        <option value="active">active</option>
+        <option value="inactive">inactive</option>
+      </select>
+</div>
+<button onclick="save()">save</button>
+     </div>
+     <h2 align="center" style="color: darkblue;">© Copyright 2025 Finity.</h2>
+    <script src="js/Cards.js"></script>
+</body>
+</html>

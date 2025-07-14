@@ -19,6 +19,7 @@ let result3 = document.getElementById("result3");
 let result4 = document.getElementById("result4");
 let final = document.getElementById("final");
 let thanks = document.getElementById("thankyou");
+const error3=document.getElementById("error3");
 
 let total = 0;
 function start() {
@@ -32,9 +33,11 @@ function start() {
   }
 }
 function calculate() {
+
+  if(Housing.value>0 && Food.value>=0 && Transportation.value>=0 && Bills.value>=0 && PersonalNeeds.value>=0 && Luxuries.value>=0 && Investment.value>=0 && Savings.value>=0){
   calc.style.display = "none";
   button.style.display = "none";
-  total =
+    total =
     salary.value -
     Housing.value -
     Food.value -
@@ -65,7 +68,19 @@ function calculate() {
     thanks.style.display = "block";
     final.innerHTML = "You have a large surplus of " + total + " JOD";
   }
+  }
+  else{
+error3.style.display="block";
+  }
 }
 function goToPage() {
   window.location.href = "homePage.html";
 }
+window.addEventListener('DOMContentLoaded', () => {
+  const username = localStorage.getItem('loggedInUsername');
+  if (username) {
+    document.getElementById('username').textContent = username;
+  } else {
+    window.location.href = 'login.html';
+  }
+});

@@ -15,7 +15,9 @@
     <title>Smart Salary Planner</title>
 </head>
 <body>
-    <button onclick="goToPage()">Go Back</button>
+   <div> <button onclick="goToPage()">Go Back</button>
+<span id="username"></span>
+</div>
     <div class="title">
         <h1>Smart Salary Planner</h1>
         <p> a professional tool designed to help individuals effectively manage their monthly income by allocating 
@@ -85,6 +87,7 @@
 
 </div>
       </div>
+      <p id="error3" style="color: red; display: none;" align="center">Enter invalid data</p>
       <div class="button"  id="button" ><button onclick="calculate()">Calculate</button></div>
        
       <div class="result" id="result">
